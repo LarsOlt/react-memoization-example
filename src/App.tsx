@@ -12,13 +12,13 @@ function App() {
 
   // Button will rerender every time the App rerenders
   const clickHandlerNotMemoized = () => {
-    console.log("button clicked");
+    console.log("Button clicked");
     setLastClickTimestamp(Date.now());
   };
 
   // Button will not rerender
   const clickHandlerMemoized = React.useCallback(() => {
-    console.log("button clicked");
+    console.log("Button clicked");
     setLastClickTimestamp(Date.now());
   }, []);
 
