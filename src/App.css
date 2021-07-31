@@ -1,7 +1,4 @@
-button {
-  user-select: no-select;
-}
-
 body {
   zoom: 200%;
+  font-family: sans-serif;
 }
